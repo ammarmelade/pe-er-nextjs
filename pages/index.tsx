@@ -18,14 +18,14 @@ const IndexPage: Page = () => {
 
             <Row>
                 <Col span={12}>
+
                     <Divider />
-                    <Row className="border border-gray-300 rounded-lg p-4">
+                    
+                    <Row gutter={24} className="border border-gray-300 rounded-lg p-4">
                         
                         <Col span={16}>
                             <AddCustomerForm />
                         </Col>
-
-                        <Col span={1}>{/* TEMP SPACE */}</Col>
 
                         <Col span={4}>
                             <RemoveCustomerButtonList />
