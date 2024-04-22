@@ -19,8 +19,8 @@ const IndexPage: Page = () => {
             <Row>
                 <Col span={12}>
 
-                    <Divider />
-                    
+                    <Divider className='border-r-4 border-gray-500'/>
+
                     <Row gutter={24} className="border border-gray-300 rounded-lg p-4">
                         
                         <Col span={16}>

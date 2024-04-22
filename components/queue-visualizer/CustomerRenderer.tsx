@@ -1,16 +1,5 @@
 import { Card } from "antd";
 
-const cardStyle: React.CSSProperties  = { 
-    textAlign: 'center', 
-    justifyContent: 'center',
-    alignContent: 'center',
-    border: '2px solid rgb(150, 150, 150)',
-    width: '100px',
-    height: '100px',
-    margin: '10px auto',
-    borderRadius: '50%',
-};
-
 function CustomerRenderer({ customersArray }) {
 
     const displayed = customersArray.slice(0, 3);
@@ -19,12 +8,12 @@ function CustomerRenderer({ customersArray }) {
     return (
         <>
             {displayed.map((item, index) => (
-                <Card key={index} hoverable={true} style={cardStyle}>
+                <Card key={index} hoverable={true} className="border-4 border-gray-400 rounded-full flex h-24 w-24 justify-center mx-auto my-2">
                     <p>{item}</p>
                 </Card>
             ))}
 
-            {hidden > 0 && <Card style={cardStyle}>{hidden} more persons.</Card>}
+            {hidden > 0 && <Card className="border-4 border-gray-400 rounded-full flex h-24 w-24 justify-center mx-auto my-2">{hidden} more persons.</Card>}
         </>
     )
 }
